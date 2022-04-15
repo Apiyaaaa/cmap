@@ -1,0 +1,233 @@
+@import '~antd/dist/antd.css';
+
+.page {
+  position: relative;
+}
+
+.List {
+  height: 95vh;
+  width: 30%;
+  z-index: 10;
+  position: absolute;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: rgba(251, 251, 251, 0.5);
+  backdrop-filter: blur(10px);
+}
+.List::-webkit-scrollbar {
+  display: none;
+}
+
+.Title {
+  margin: 20px 20px;
+  margin-left: 2.5vw;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+}
+
+.Card {
+  border-radius: 10px;
+  background-color: #ffffff;
+  height: 90px;
+  max-height: 90px;
+  width: 80%;
+  margin: 15px auto;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.06);
+  padding: 10px;
+  transition: width 0.5s, height 0.5s;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.ActiveCard {
+  border-radius: 10px;
+  margin: 17px auto;
+  width: 85%;
+  height: auto;
+  max-height: 1000px;
+  padding: 10px;
+  background-color: #6598f0;
+  box-shadow: 0px 0px 10px 5px rgba(0, 102, 255, 0.15);
+  /* box-shadow: 2px 0px 3px 1px #6a9df5; */
+  color: whitesmoke;
+  background-image: linear-gradient(to bottom left, rgb(98, 152, 239), rgb(0, 123, 255));
+  transition: max-height 2s ease;
+  
+  
+}
+
+.Card:hover {
+  width: 85%;
+  height: auto;
+  /* background-color: #6a9df5; */
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+  
+  transition: all 0.3s ease-out;
+  
+  
+}
+
+.Discrption {
+  font-size: 12px;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+.ActiveDiscrption {
+  font-size: 12px;
+  overflow: visible;
+  word-break: break-all;
+  white-space: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+.Contact {
+  font-size: 10px;
+  margin-top: 0.5%;
+
+}
+.ActiveContact{
+  font-size: 10px;
+  margin-top: 5px;
+
+}
+
+
+
+.Location {
+  font-size: 14px;
+  font-weight: bold;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+.ActiveLocation {
+  font-size: 14px;
+  font-weight: bold;
+  width: 80%;
+  overflow:visible;
+  white-space: wrap;
+  padding-right: 10px;
+
+}
+
+
+.Link{
+  font-size: small;
+  font-size: 12px;
+  float: right;
+  display:none;
+}
+.ActiveLink{
+  font-size: small;
+  font-size: 12px;
+  float: right;
+}
+
+
+
+.publish_time {
+  font-size: 12px;
+  width: auto;
+  white-space: nowrap;
+  
+  
+  
+}
+
+
+.Duty {
+  width: 100%;
+  height: 5vh;
+  z-index: 1000;
+  position: absolute;
+  bottom: 0;
+  background-color: #372f32;
+  color: #f5f5f5;
+  font-size: 6px;
+  text-align: center;
+  padding: 3px;
+
+}
+
+
+.Map {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+}
+
+@media screen and (max-width: 500px){
+  .Map {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+  }
+
+  .Duty {
+    width: 100%;
+    height: 5vh;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    background-color: #372f32;
+    color: #f5f5f5;
+    font-size: xx-small;
+    text-align: center;
+    padding: 3px;
+  
+  }
+
+  .List {
+    height: 40vh;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    overflow: scroll;
+    overflow-x: visible;
+    
+    background-color: rgba(251, 251, 251, 0.5);
+    backdrop-filter: blur(10px);
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    bottom: 0;
+  }
+  .List::-webkit-scrollbar {
+    display: none;
+  }
+  .Title {
+    margin: 20px 20px;
+    margin-left: 2.5vw;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .Card {
+    border-radius: 10px;
+    background-color: #ffffff;
+    height: 90px;
+    max-height: 90px;
+    width: 80%;
+    margin: 15px auto;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    transition: width 0.5s, height 0.5s;
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+
+
+}
